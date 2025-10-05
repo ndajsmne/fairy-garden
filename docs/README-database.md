@@ -28,5 +28,27 @@ Rekomendasi teknis:
 - Simpan seed data untuk development di `sql/seeds/`.
 - Pertimbangkan menambahkan `audits` table atau column (created_by, updated_by) bila diperlukan.
 
+Knex migrations (quick start):
+
+1. Install dependencies (jalankan di CMD jika PowerShell memblokir skrip):
+
+```bash
+npm install
+```
+
+2. Jalankan migrasi:
+
+```bash
+npm run migrate
+```
+
+3. Untuk rollback satu batch terakhir:
+
+```bash
+npm run migrate:rollback
+```
+
+File migrasi disimpan di folder `migrations/`.
+
 Kontak:
 - Tim backend: backend@fairygarden.local (ganti dengan email tim)
